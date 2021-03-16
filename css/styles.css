@@ -1,34 +1,42 @@
-/* MOBILE AND GLOBAL STYLES */
 
-/* applies to screens smaller than 500px (first breakpoint) */
-/* and above unless overwritten below */
+header {
+  background-color: white;
+  display: flex;
+  }
 
-body {
-  background: #fcc;
-} 
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+nav a {
+  padding: 0.25em;
+  color: #5badf0;
+  text-decoration: none;
+  margin: 0.5em;
+}
 
-
-/* TABLET STYLES */
-
-@media screen and (min-width: 500px) {
-
-  /* applies to screens wider than 499px */
-  
-  body {
-    background: #cfc;
-  } 
+nav a.highlight {
+  background-color: #5badf0;
+  color: white;
 }
 
 
+body {
+  background: grey;
+}
 
-/* DESKTOP STYLES */
+img {
+margin-right: 45em;
+}
 
-@media screen and (min-width: 1000px) {
-
-  /* applies to screens wider than 999px */
-
-  body {
-    background: #ccf;
-  } 
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: auto;
+  background-color: #e8491d;
+  color: white;
+  text-align: center;
 }
