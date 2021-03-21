@@ -1,42 +1,78 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 header {
   background-color: white;
   display: flex;
-  }
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  margin: -10px;
 }
 
-nav a {
+.menu {
+  margin-right: 1em;
+}
+
+.menu a {
   padding: 0.25em;
-  color: #5badf0;
+  color: #000000;
   text-decoration: none;
-  margin: 0.5em;
 }
 
-nav a.highlight {
-  background-color: #5badf0;
+.menu a.highlight {
+  background-color: #000000;
   color: white;
 }
 
+.menu li{
+  list-style: none;
+}
+
+.menu :hover {
+  background-color: #006678;
+}
+
+.header .menu li a {
+  padding: 20px 35px;
+}
+
+.header .menu{
+  align-self: stretch;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
   background: grey;
 }
 
-img {
-margin-right: 45em;
+.header .header_logo img {
+  padding: 10px;
+  height: 40px;
+  width: 220px;
 }
 
-footer {
-  left: 0;
-  bottom: 0;
+.footer {
+  margin: -10px;
+  padding:10px 10px 10px 10px;
   width: 100%;
   position: auto;
-  background-color: #e8491d;
-  color: white;
+  background-color: white;
+  color: #000000;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #3B5998;
+  color: white;
 }
