@@ -3,20 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>WebInventive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="header">
       <a href="index.html" class="header_logo"><img src="images/Logo.png" alt="logo"></a>
-      <nav class="menu">
+      <div id="menuToggler">&#8801;</div>
+      <nav class="menu" id="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="portfolio.html">PORTFOLIO</a></li>
         <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="contact.html" class="highlight">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </nav>
     </header>
+    <main class="contactbgimage">
+      <form action="" class="contactform" id="contactform">
+        <ul class="flex-outer">
+          <li>
+            <label for="first-name">First Name
+            <input type="text" id="first-name" placeholder="Enter your first name here"></label>
+          </li>
+          <li>
+            <label for="email">Email
+            <input type="email" id="email" placeholder="Enter your email here"></label>
+          </li>
+          <li>
+            <label for="message">Message
+            <textarea rows="6" id="message" placeholder="Enter your message here"></textarea></label>
+          </li>
+          <li>
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </main>
     <footer class="footer">
       <p>Copyright &copy;2021</p>
       <p>Website Created By Nafis Bhamjee</p>
