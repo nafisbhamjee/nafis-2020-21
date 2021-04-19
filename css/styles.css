@@ -45,8 +45,6 @@ html {
   align-self: stretch;
   margin-left: auto;
   align-items: center;
-  padding: 2em;
-  padding-right: 45px;
   transform: translateY(-100vw);
   transition: 0.5s;
   height: auto;
@@ -58,9 +56,9 @@ html {
 }
 
 .menu a {
-  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
   text-decoration: none;
   color: #006678;
 }
@@ -82,6 +80,18 @@ html {
   padding: 10px;
   height: 40px;
   width: 250px;
+}
+
+.advert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.advert img {
+  padding-left: 5em;
+  padding-top: 2em;
+  height: 70%;
 }
 
 .contactbgimage {
@@ -190,17 +200,48 @@ html {
   color: #000000;
 }
 
-.hometext1 {
+.hometext1, .hometext3, .feedback h3 {
+  padding: 5px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+
 }
 
  .hometext2 {
+   padding: 5px;
    font-weight: lighter;
    font-family: 'Poppins', sans-serif;
    font-size: 40px;
  }
+
+ .feedback h2 {
+   font-weight: lighter;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .feedback {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #6EC1E4;
+ }
+
+ .text_main{
+   padding: 4em;
+   padding: 8em;
+ }
+
+.text_main button {
+   color: #f2f3f4;
+   padding: 10px 25px;
+   background: #006678;
+   border: 1px solid #fff;
+   border-radius: 20px;
+   outline: none;
+   cursor: pointer;
+ }
+
 
 @media screen and (min-width: 1000px){
 
@@ -227,14 +268,13 @@ html {
   .menu a {
     padding: 0.25em;
     background-color: white;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   .header .menu li a {
     padding: 24px 35px;
   }
 
-  .home_main {
-    padding: 5em;
-  }
 
 }
