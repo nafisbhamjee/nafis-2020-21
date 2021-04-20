@@ -88,11 +88,6 @@ html {
   justify-content: space-between;
 }
 
-.advert img {
-  padding-left: 5em;
-  padding-top: 2em;
-  height: 70%;
-}
 
 .contactbgimage {
   background-image: url("../images/background.jpg");
@@ -200,11 +195,13 @@ html {
   color: #000000;
 }
 
-.hometext1, .hometext3, .feedback h3 {
+.hometext1,
+.hometext3,
+.feedback h3,
+.feedback h4 {
   padding: 5px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-
 }
 
  .hometext2 {
@@ -220,6 +217,7 @@ html {
  }
 
  .feedback {
+   padding: 5em;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -241,6 +239,8 @@ html {
    outline: none;
    cursor: pointer;
  }
+
+
 
 
 @media screen and (min-width: 1000px){
@@ -276,5 +276,10 @@ html {
     padding: 24px 35px;
   }
 
+  .advert img {
+    padding-left: 5em;
+    padding-top: 5em;
+    height: 55%;
+  }
 
 }
