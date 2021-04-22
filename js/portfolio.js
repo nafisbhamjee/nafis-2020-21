@@ -1,3 +1,7 @@
+document.getElementById("prev").onclick = function() {plusSlides(-1)};
+
+document.getElementById("next").onclick = function() {plusSlides(1)};
+
 let slideIndex = 1;
 displaySlides(slideIndex);
 
