@@ -44,7 +44,7 @@ html {
   top: 5;
   align-self: stretch;
   margin-left: auto;
-  align-items: center;
+
   transform: translateY(-100vw);
   transition: 0.5s;
   height: auto;
@@ -56,7 +56,7 @@ html {
 }
 
 .menu a {
-  justify-content: center;
+
   font-family: 'Rubik', sans-serif;
   font-size: 1.2em;
   text-decoration: none;
@@ -74,6 +74,8 @@ html {
 
 .menu li{
   list-style: none;
+  padding: 1em;
+  text-align: left;
 }
 
 .header .header_logo img {
@@ -82,11 +84,6 @@ html {
   width: 250px;
 }
 
-.advert {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 
 .contactbgimage {
@@ -208,7 +205,6 @@ html {
    padding: 5px;
    font-weight: lighter;
    font-family: 'Poppins', sans-serif;
-   font-size: 40px;
  }
 
  .feedback h2 {
@@ -216,19 +212,41 @@ html {
    font-family: 'Poppins', sans-serif;
  }
 
+ .feedback p {
+   padding: 5px 5em;
+   font-weight: lighter;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+ }
+
  .feedback {
-   padding: 5em;
+   padding: 8em 0em;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    background-color: #6EC1E4;
+   transition: background-color 0.4s;
  }
 
- .text_main{
-   padding: 4em;
-   padding: 8em;
+ .feedback:hover {
+  background-color: #6EB1E5;
  }
+
+.advert {
+  padding: 5em;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.advert img {
+  width: 80%;
+}
 
 .text_main button {
    color: #f2f3f4;
@@ -239,7 +257,6 @@ html {
    outline: none;
    cursor: pointer;
  }
-
 
 
 
@@ -266,20 +283,36 @@ html {
   }
 
   .menu a {
-    padding: 0.25em;
+    padding: 0em;
     background-color: white;
     font-size: 1em;
-    font-weight: bold;
   }
 
   .header .menu li a {
     padding: 24px 35px;
   }
 
-  .advert img {
-    padding-left: 5em;
-    padding-top: 5em;
-    height: 55%;
+  .menu li{
+    padding: 0em;
   }
 
+
+  .advert img {
+    display: grid;
+    width: 70%;
+  }
+
+
+  .advert {
+      padding: 8em 0em 8em 12em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
