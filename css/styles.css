@@ -251,9 +251,11 @@ html {
 }
 
 .slideshow-container {
-  max-width: 700px;
-  padding-top: 3em;
+  max-width: 1000px;
+  max-height: 600px;
+  padding: auto;
   margin: auto;
+  padding-top: 3em;
 }
 
 .mySlides {
@@ -262,6 +264,25 @@ html {
 
 .slideshow-container img {
   width: 100%;
+  max-height: 520px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prev{
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 @media screen and (min-width: 1000px){
