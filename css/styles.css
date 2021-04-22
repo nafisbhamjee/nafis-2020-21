@@ -84,8 +84,6 @@ html {
   width: 250px;
 }
 
-
-
 .contactbgimage {
   background-image: url("../images/background.jpg");
   background-color: #cccccc;
@@ -93,7 +91,6 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-
 }
 
 .contactform {
@@ -105,7 +102,6 @@ html {
   margin: 0 auto;
   color: white;
   padding: 10px 0;
-
 }
 
 .contactform :hover{
@@ -124,7 +120,6 @@ html {
   align-items: center;
 }
 
-
 .flex-outer li label {
   flex: 1 0 150px;
   padding: 12px;
@@ -132,9 +127,7 @@ html {
   font-size: 1.2em;
   border: none;
   text-transform: uppercase;
-
 }
-
 
 .flex-outer li textarea,input{
   display: block;
@@ -201,25 +194,25 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
- .hometext2 {
+.hometext2 {
    padding: 5px;
    font-weight: lighter;
    font-family: 'Poppins', sans-serif;
  }
 
- .feedback h2 {
+.feedback h2 {
    font-weight: lighter;
    font-family: 'Poppins', sans-serif;
  }
 
- .feedback p {
+.feedback p {
    padding: 5px 5em;
    font-weight: lighter;
    font-family: 'Poppins', sans-serif;
    text-align: center;
  }
 
- .feedback {
+.feedback {
    padding: 8em 0em;
    display: flex;
    flex-direction: column;
@@ -229,7 +222,7 @@ html {
    transition: background-color 0.4s;
  }
 
- .feedback:hover {
+.feedback:hover {
   background-color: #6EB1E5;
  }
 
@@ -240,7 +233,6 @@ html {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-
 }
 
 
@@ -256,9 +248,21 @@ html {
    border-radius: 20px;
    outline: none;
    cursor: pointer;
- }
+}
 
+.slideshow-container {
+  max-width: 700px;
+  padding-top: 3em;
+  margin: auto;
+}
 
+.mySlides {
+  display: none;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
 
 @media screen and (min-width: 1000px){
 
