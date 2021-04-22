@@ -11,8 +11,7 @@ html {
   margin: 0;
 }
 
-
-.header{
+.header {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -44,7 +43,6 @@ html {
   top: 5;
   align-self: stretch;
   margin-left: auto;
-
   transform: translateY(-100vw);
   transition: 0.5s;
   height: auto;
@@ -56,7 +54,6 @@ html {
 }
 
 .menu a {
-
   font-family: 'Rubik', sans-serif;
   font-size: 1.2em;
   text-decoration: none;
@@ -120,26 +117,8 @@ html {
   align-items: center;
 }
 
-.flex-outer li label {
-  flex: 1 0 150px;
-  padding: 12px;
-  font-weight: 400;
-  font-size: 1.2em;
-  border: none;
-  text-transform: uppercase;
-}
-
 .flex-outer li textarea,input{
   display: block;
-  padding:10px 50px;
-  border: none;
-  margin: 1em auto;
-  width: 500px;
-  height: 50px;
-}
-
-.flex-outer li textarea{
-  height: 200px;
 }
 
 .flex-outer li textarea:hover,
@@ -272,17 +251,50 @@ html {
   position: absolute;
   top: 30%;
   padding: 14px;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-.prev{
+.prev {
   left: 0;
 }
 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (min-width: 800px){
+
+  .flex-outer li label {
+    flex: 1 0 150px;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .flex-outer li textarea,input{
+    display: block;
+    padding:10px 50px;
+    border: none;
+    margin: 1em auto;
+    width: 500px;
+    height: 50px;
+  }
+
+  .flex-outer li textarea{
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 1000px){
@@ -340,4 +352,6 @@ html {
     top: 0;
     width: 100%;
   }
+
+
 }
