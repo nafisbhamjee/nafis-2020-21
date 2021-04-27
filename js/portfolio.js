@@ -1,13 +1,21 @@
-document.getElementById("prev").onclick = function() {plusSlides(-1)};
+"use strict";
 
-document.getElementById("next").onclick = function() {plusSlides(1)};
+next.addEventListener("click",plusSlides);
+prev.addEventListener("click",prevSlides);
 
 let slideIndex = 1;
 displaySlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  displaySlides(slideIndex += n);
+// Next controls
+function plusSlides(ev) {
+  slideIndex++;
+  displaySlides(slideIndex);
+}
+
+//Previous controls
+function prevSlides(ev) {
+  slideIndex--;
+  displaySlides(slideIndex);
 }
 
 // Thumbnail image controls

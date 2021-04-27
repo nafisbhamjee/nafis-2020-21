@@ -3,13 +3,15 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 body,
 html {
   height: 100%;
-  margin: 0;
+  margin: 0px;
 }
+
 
 .header {
   align-self: stretch;
@@ -36,43 +38,38 @@ html {
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   position: fixed;
   background-color: white;
-  width: 100%;
-  top: 5;
-  align-self: stretch;
-  margin-left: auto;
-  transform: translateY(-100vw);
+  transform: translateY(-100vw) translateX(100vw);
   transition: 0.5s;
-  height: auto;
+
 }
 
 .menu.open {
   transform: translateY(0);
   transition: 0.5s;
+  width: 100%;
+  left: 0;
+}
+
+nav a.highlight {
+  color: #006678;
 }
 
 .menu a {
   font-family: 'Rubik', sans-serif;
   font-size: 1.2em;
   text-decoration: none;
-  color: #006678;
+  border-bottom: solid 1px #ffffff;
+  transition: border-width 0.2s linear;
+  color: #000000;
+  padding: 1em;
 }
 
 .menu a:hover {
-  color: white;
-}
-
-.menu :hover {
-  background-color: #006678;
-}
-
-
-.menu li{
-  list-style: none;
-  padding: 1em;
-  text-align: left;
+  border-width: 2px;
+  border-color: #006678;
+  color: #006678;
 }
 
 .header .header_logo img {
@@ -81,13 +78,14 @@ html {
   width: 250px;
 }
 
+
 .contactbgimage {
-  background-image: url("../images/background.jpg");
+  /*background-image: url("../images/background.jpg");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 100%;*/
 }
 
 .contactform {
@@ -101,32 +99,32 @@ html {
   padding: 10px 0;
 }
 
-.contactform :hover{
+.contactform :hover {
   background-color: black;
 }
 
-.flex-outer{
+.flex-outer {
   list-style-type: none;
   padding: 50px;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.flex-outer li{
+.flex-outer li {
   display: flex;
   align-items: center;
 }
 
-.flex-outer li textarea,input{
+.flex-outer li textarea,input {
   display: block;
 }
 
 .flex-outer li textarea:hover,
-.flex-outer li input:hover{
+.flex-outer li input:hover {
   background-color: white;
 }
 
-.flex-outer li button:hover{
+.flex-outer li button:hover {
   background-color: blue;
 }
 
@@ -144,7 +142,6 @@ html {
   align-self: stretch;
   padding:1em 0em;
   width: 100%;
-  position: auto;
   background-color: #006678;
   color: white;
   text-align: center;
@@ -170,40 +167,38 @@ html {
 .feedback h4 {
   padding: 5px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+
 }
 
 .hometext2 {
-   padding: 5px;
-   font-weight: lighter;
-   font-family: 'Poppins', sans-serif;
- }
+  padding: 5px;
+  font-weight: lighter;
+}
 
 .feedback h2 {
-   font-weight: lighter;
-   font-family: 'Poppins', sans-serif;
- }
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
+}
 
 .feedback p {
-   padding: 5px 5em;
-   font-weight: lighter;
-   font-family: 'Poppins', sans-serif;
-   text-align: center;
- }
+  padding: 5px 5em;
+  font-weight: lighter;
+  text-align: center;
+}
 
 .feedback {
-   padding: 8em 0em;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #6EC1E4;
-   transition: background-color 0.4s;
- }
+  padding: 8em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6EC1E4;
+  transition: background-color 0.4s;
+}
 
 .feedback:hover {
   background-color: #6EB1E5;
- }
+}
 
 .advert {
   padding: 5em;
@@ -220,21 +215,43 @@ html {
 }
 
 .text_main button {
-   color: #f2f3f4;
-   padding: 10px 25px;
-   background: #006678;
-   border: 1px solid #fff;
-   border-radius: 20px;
-   outline: none;
-   cursor: pointer;
+  color: #f2f3f4;
+  padding: 10px 25px;
+  background: #006678;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats section{
+  padding: 2em;
+}
+
+.stats h2 {
+  font-size: 3em;
+  padding-bottom: 0.1em;
+  color: #006678;
+}
+
+.stats h4 {
+  font-size: 1.2em;
+  color: lightgrey;
+  font-weight: lighter;
+}
+
+
+
 .slideshow-container {
-  max-width: 1000px;
-  max-height: 600px;
-  padding: auto;
-  margin: auto;
-  padding-top: 3em;
+  width: 100%;
+
 }
 
 .mySlides {
@@ -242,14 +259,17 @@ html {
 }
 
 .slideshow-container img {
-  width: 100%;
-  max-height: 520px;
+  display: block;
+  width: 70%;
+  max-height: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 40%;
   padding: 14px;
   font-size: 30px;
   font-weight: bold;
@@ -265,12 +285,35 @@ html {
 }
 
 .text {
+  background-color: #5bb1c0;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  padding: 2em;
 }
 
+.portfolio-head {
+  text-align: center;
+  font-weight: 600;
+}
+
+.divider {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.divider-separator {
+  display: flex;
+  width: 10%;
+  margin: 0 auto;
+  color: #006678;
+  border-style: solid;
+}
+
+.portfolio-head {
+  margin-top: 1em;
+  padding-top: 2em;
+}
 
 @media screen and (min-width: 800px){
 
@@ -295,6 +338,8 @@ html {
   .flex-outer li textarea{
     height: 200px;
   }
+
+
 }
 
 @media screen and (min-width: 1000px){
@@ -304,16 +349,14 @@ html {
   }
 
   .menu {
-    align-self: stretch;
     margin-left: auto;
     margin-top: 0em;
     display: flex;
+    width: auto;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    height: auto;
-    width: auto;
     transition: none;
     transform: none;
     position: static;
@@ -321,16 +364,13 @@ html {
 
   .menu a {
     padding: 0em;
+    padding-bottom: 0.3em;
     background-color: white;
     font-size: 1em;
   }
 
-  .header .menu li a {
+  .header .menu a  {
     padding: 24px 35px;
-  }
-
-  .menu li{
-    padding: 0em;
   }
 
 
@@ -341,10 +381,10 @@ html {
 
 
   .advert {
-      padding: 8em 0em 8em 12em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+    padding: 8em 0em 8em 12em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .header {
