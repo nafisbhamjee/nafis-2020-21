@@ -42,17 +42,16 @@ html {
   flex-direction: column;
   position: fixed;
   background-color: white;
-  transform: translateY(-100vw) translateX(100vw);
+  left: -100%;
   transition: 0.5s;
-
 }
 
 .menu.open {
   transform: translateY(0);
   transition: 0.5s;
   width: 100%;
+  height: 100%;
   left: 0;
-  margin-top: 16em;
 }
 
 nav a.highlight {
@@ -67,6 +66,7 @@ nav a.highlight {
   transition: border-width 0.2s linear;
   color: #000000;
   padding: 1em;
+  text-align: center;
 }
 
 .menu a:hover {
@@ -80,22 +80,6 @@ nav a.highlight {
   height: 40px;
   width: 250px;
 }
-
-
-/*.contactmain {
-  display: block;
-  text-align: center;
-}
-
-.contactform {
-  display: inline-block;
-  text-align: left;
-  max-width: 1200px;
-  padding: 10em;
-  color: #000000;
-  background-color: #f8f8ff;
-}*/
-
 
 .footer {
   align-self: stretch;
@@ -120,6 +104,10 @@ nav a.highlight {
   border-radius: 50%;
   background: #ffffff;
   color: #000000;
+}
+
+.service-tile i:hover {
+
 }
 
 .hometext1,
@@ -170,12 +158,9 @@ nav a.highlight {
   text-align: center;
 }
 
-
 .advert img {
   width: 80%;
 }
-
-
 
 .Contact:hover,
 .Contact-secondary:hover {
@@ -311,11 +296,16 @@ nav a.highlight {
 }
 
 .portfolio-head,
-.services-head {
+.services-head,
+.contact-head {
   text-align: center;
   font-weight: 600;
   margin-top: 1em;
   padding-top: 2em;
+}
+
+.main-contact {
+  background-color: lightgrey;
 }
 
 .contacthead {
@@ -324,37 +314,81 @@ nav a.highlight {
   color: #ffffff;
 }
 
-.contactmain {
+.contact-outer{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2em;
   width: 100%;
-  margin: 3.2rem auto 0 auto;
+}
+
+.contactmain {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 55px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px #D3D3D3;
 }
 
 .contactform {
-  padding: 2.3rem 0.5rem;
+  display: block;
+  padding-right: 2rem;
   border-radius: 0.3rem;
 }
 
-.form-input{
-   margin: 0 2.5rem 1.2rem 2rem;
-}
+
 
 .contactform label {
  display: flex;
- align-items: center;
  flex-direction: column;
  font-size: 1.125rem;
  margin-bottom: 0.5rem;
+ font-weight: bold;
+ font-style: italic;
+}
+
+.contactform select {
+  width: 100%;
+  padding: 5px;
+}
+
+.contactform input {
+  border: none;
+  border-bottom: solid 1px;
+  width: 100%;
+  padding: 5px;
 }
 
 .contactform textarea{
  width: 100%;
  min-height: 6rem;
  resize: vertical;
- padding: 0.5rem 0 0 0.5rem;
+ padding: 5px;
 }
 
 .flex-outer {
   list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.flex-outer li {
+  padding: 1em;
+  width: 100%;
+}
+
+.submit_button {
+  text-align: center;
+  width: 100%;
+}
+
+.submit_inner {
+  background-color: pink;
+  padding: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
 }
 
 .contact-link {
@@ -372,10 +406,6 @@ nav a.highlight {
 
 
 @media screen and (min-width: 600px){
-
-.contactmain {
-  max-width: 560px;
-}
 
 .Contact,
 .Contact-secondary {
@@ -438,12 +468,12 @@ nav a.highlight {
     width: 100%;
   }
 
-  .contacthead {
+  .contact-head {
     padding: 5em;
     padding-top: 8em;
   }
 
-  .contacthead h1 {
+  .contact-head h1 {
     font-size: 3em;
   }
 

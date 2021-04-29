@@ -19,29 +19,54 @@
           <a href="contact.html" class="highlight">CONTACT</a>
       </nav>
     </header>
-    <main>
-      <h1>Contact us</h1>
-      <h3>Contact us to discuss Your Requirements today</h3>
-      <article class="contactmain">
-        <form action="" class="contactform" id="contactform">
-          <ul class="flex-outer">
-            <li>
-              <label for="first-name" class="form-input">First Name
-              <input type="text" id="first-name" required placeholder="Enter your first name here"></label>
-            </li>
-            <li>
-              <label for="email" class="form-input">Email
-              <input type="email" id="email" required placeholder="Enter your email here"></label>
-            </li>
-            <li>
-              <label for="message" class="form-input">Message
-              <textarea rows="6" id="message" required placeholder="Enter your message here"></textarea></label>
-            </li>
-            <li>
-              <button type="submit">Submit</button>
-            </li>
-          </ul>
-        </form>
+    <main class="main-contact">
+      <article class="contact-head">
+        <h1>Contact</h1>
+      </article>
+      <article class="contact-outer">
+        <section class="contactmain">
+          <form action="" class="contactform" id="contactform">
+            <ul class="flex-outer">
+              <li>
+                <h2>Hi there,</h2>
+              </li>
+              <li>
+                <label for="reason" class="form-input">I'd like to Contact you because</label>
+                  <select name="input_12" id="input_1_12" class="large gfield_select" >
+                    <option value="" selected="selected" class="gf_placeholder">I have a question about a product</option>
+                    <option value="I want to give you a testimonial">I want to give you a testimonial</option>
+                    <option value="I'm having a nervous breakdown">I'm having a nervous breakdown</option>
+                    <option value="I'd like to request an interview">I'd like to request an interview</option>
+                    <option value="Amy Poehler sent me">Amy Poehler sent me</option>
+                  </select>
+              </li>
+              <li>
+                <label for="email" class="form-input">You can reply to me at</label>
+                <input type="email" id="email" required placeholder="Enter your email here">
+              </li>
+              <li>
+                <label class="form-input" for="input_1_1">as long as you promise not to</label>
+                <select name="input_13" id="input_1_13" class="large gfield_select">
+                  <option value="" selected="selected" class="gf_placeholder">Give my email address to satan</option>
+                  <option value="Write back in a fake British accent">Write back in a fake British accent</option>
+                  <option value="USE ALL CAPITAL LETTERS!!!">USE ALL CAPITAL LETTERS!!!</option>
+                  <option value="Send me an automatic reply (gag)">Send me an automatic reply (gag)</option>
+                </select>
+              </li>
+              <li>
+                <label for="message" class="form-input">Message</label>
+                <textarea rows="6" id="message" required placeholder="Enter your message here"></textarea>
+              </li>
+              <li>
+                <label for="first-name" class="form-input">Your Name
+                  <input type="text" id="first-name" required placeholder="Enter your name here"></label>
+                </li>
+              <li class="submit_button">
+                <button type="submit" class="submit_inner">SEND WITH THE SPEED OF A PACK OF WOLVES</button>
+              </li>
+            </ul>
+          </form>
+        </section>
       </article>
     </main>
     <footer class="footer">
