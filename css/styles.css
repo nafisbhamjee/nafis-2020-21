@@ -1,4 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 
 * {
   margin: 0px;
@@ -50,6 +52,7 @@ html {
   transition: 0.5s;
   width: 100%;
   left: 0;
+  margin-top: 16em;
 }
 
 nav a.highlight {
@@ -79,64 +82,20 @@ nav a.highlight {
 }
 
 
-.contactbgimage {
-  /*background-image: url("../images/background.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;*/
+/*.contactmain {
+  display: block;
+  text-align: center;
 }
 
 .contactform {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
+  display: inline-block;
+  text-align: left;
   max-width: 1200px;
-  margin: 0 auto;
-  color: white;
-  padding: 10px 0;
-}
+  padding: 10em;
+  color: #000000;
+  background-color: #f8f8ff;
+}*/
 
-.contactform :hover {
-  background-color: black;
-}
-
-.flex-outer {
-  list-style-type: none;
-  padding: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.flex-outer li {
-  display: flex;
-  align-items: center;
-}
-
-.flex-outer li textarea,input {
-  display: block;
-}
-
-.flex-outer li textarea:hover,
-.flex-outer li input:hover {
-  background-color: white;
-}
-
-.flex-outer li button:hover {
-  background-color: blue;
-}
-
-.flex-outer li button {
-  margin: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
 
 .footer {
   align-self: stretch;
@@ -149,7 +108,9 @@ nav a.highlight {
   font-family: 'Poppins', sans-serif;
 }
 
-.fa {
+.fab,
+.far,
+.fas {
   margin-top: 15px;
   padding: 10px;
   font-size: 30px;
@@ -214,14 +175,12 @@ nav a.highlight {
   width: 80%;
 }
 
-.text_main button {
-  color: #f2f3f4;
-  padding: 10px 25px;
-  background: #006678;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
+
+
+.Contact:hover,
+.Contact-secondary:hover {
+  background-color: white;
+  color: #006678;
 }
 
 .stats {
@@ -247,11 +206,30 @@ nav a.highlight {
   font-weight: lighter;
 }
 
+.myservices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #6EC1E4;
+}
 
+.services-tile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  width: 25%;
+  margin: 1em;
+  background-color: #ffffff
+}
+
+.services-tile i{
+  margin: auto;
+}
 
 .slideshow-container {
   width: 100%;
-
 }
 
 .mySlides {
@@ -273,6 +251,7 @@ nav a.highlight {
   padding: 14px;
   font-size: 30px;
   font-weight: bold;
+  transition: 0.6s ease;
 }
 
 .prev {
@@ -284,17 +263,38 @@ nav a.highlight {
   border-radius: 3px 0 0 3px;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
 .text {
-  background-color: #5bb1c0;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  padding: 2em;
-}
-
-.portfolio-head {
-  text-align: center;
-  font-weight: 600;
 }
 
 .divider {
@@ -310,38 +310,85 @@ nav a.highlight {
   border-style: solid;
 }
 
-.portfolio-head {
+.portfolio-head,
+.services-head {
+  text-align: center;
+  font-weight: 600;
   margin-top: 1em;
   padding-top: 2em;
 }
 
-@media screen and (min-width: 800px){
-
-  .flex-outer li label {
-    flex: 1 0 150px;
-    padding: 12px;
-    font-weight: 400;
-    font-size: 1.2em;
-    border: none;
-    text-transform: uppercase;
-  }
-
-  .flex-outer li textarea,input{
-    display: block;
-    padding:10px 50px;
-    border: none;
-    margin: 1em auto;
-    width: 500px;
-    height: 50px;
-  }
-
-  .flex-outer li textarea{
-    height: 200px;
-  }
-
-
+.contacthead {
+  text-align: center;
+  background-color:#006678;
+  color: #ffffff;
 }
 
+.contactmain {
+  width: 100%;
+  margin: 3.2rem auto 0 auto;
+}
+
+.contactform {
+  padding: 2.3rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.form-input{
+   margin: 0 2.5rem 1.2rem 2rem;
+}
+
+.contactform label {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ font-size: 1.125rem;
+ margin-bottom: 0.5rem;
+}
+
+.contactform textarea{
+ width: 100%;
+ min-height: 6rem;
+ resize: vertical;
+ padding: 0.5rem 0 0 0.5rem;
+}
+
+.flex-outer {
+  list-style-type: none;
+}
+
+.contact-link {
+  text-align: center;
+  padding: 2em;
+  margin: auto 10em;
+}
+
+.contact-link section {
+  padding: 2em;
+  margin: auto 0;
+  box-shadow: 2px 2px 2px 2px #D3D3D3;
+  color: #006678;
+}
+
+
+@media screen and (min-width: 600px){
+
+.contactmain {
+  max-width: 560px;
+}
+
+.Contact,
+.Contact-secondary {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: #006678;
+  color: #f2f3f4;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+}
 @media screen and (min-width: 1000px){
 
   #menuToggler{
@@ -352,9 +399,7 @@ nav a.highlight {
     margin-left: auto;
     margin-top: 0em;
     display: flex;
-    width: auto;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     transition: none;
@@ -391,6 +436,15 @@ nav a.highlight {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+  .contacthead {
+    padding: 5em;
+    padding-top: 8em;
+  }
+
+  .contacthead h1 {
+    font-size: 3em;
   }
 
 
