@@ -3,6 +3,7 @@
 next.addEventListener("click",plusSlides);
 prev.addEventListener("click",prevSlides);
 
+
 let slideIndex = 1;
 displaySlides(slideIndex);
 
