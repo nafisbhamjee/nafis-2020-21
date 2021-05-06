@@ -1,6 +1,27 @@
 "use strict";
 
-console.log("$randomnum");
+submit_inner.addEventListener("click", function valid() {
+  if (validate_form)
+  {
+  alert ( "Thank you for your interest, Hope to speak to you soon" );
+  }
+});
+
+function validate_form()
+{
+    let valid = true;
+
+    if ( document.getElementById('email').value == "" ){
+        valid = false;
+    } if ( document.getElementById('message').value == "" ){
+        valid = false;
+    } if ( document.getElementById('name').value == "" ){
+        valid = false;
+    }
+
+    return valid;
+}
+
 
 window.addEventListener('load',newSubmittext)
 
@@ -9,7 +30,8 @@ let submit_text = [
   'Just send it',
   'Speed Post with SMTP',
   'Catapault your message across the internet',
-  'Dont be cheesy just a "submit" would have been enough'
+  'Dont be cheesy just a "submit" would have been enough',
+  'Send it please "Stay Home Stay Safe"'
 ]
 
 function newSubmittext() {

@@ -106,17 +106,16 @@ nav a.highlight {
   color: #000000;
 }
 
-.service-tile i:hover {
-
-}
-
 .hometext1,
 .hometext3,
 .feedback h3,
 .feedback h4 {
   padding: 5px;
   font-weight: bold;
+}
 
+.hometext3 {
+  padding-bottom: 1em;
 }
 
 .hometext2 {
@@ -191,11 +190,19 @@ nav a.highlight {
   font-weight: lighter;
 }
 
+.servicesbgimage {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 .myservices {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+  padding: 2em 0em;
   background-color: #6EC1E4;
 }
 
@@ -203,7 +210,7 @@ nav a.highlight {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2em;
+  padding: 4em 2em;
   width: 25%;
   margin: 1em;
   background-color: #ffffff
@@ -211,6 +218,10 @@ nav a.highlight {
 
 .services-tile i{
   margin: auto;
+}
+
+.services-tile i:hover{
+  background-color: #006678;
 }
 
 .slideshow-container {
@@ -276,6 +287,23 @@ nav a.highlight {
   }
 }
 
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 0em;
+  background-color: #ffffff;
+}
+
+.customer-tile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 15%;
+  margin: 1em;
+
+}
+
 .text {
   text-align: center;
   font-size: 30px;
@@ -306,6 +334,7 @@ nav a.highlight {
 
 .main-contact {
   background-color: lightgrey;
+  width: 100%;
 }
 
 .contacthead {
@@ -390,31 +419,99 @@ nav a.highlight {
 }
 
 .contact-link {
+  display: block;
   text-align: center;
   padding: 2em;
   margin: auto 10em;
 }
 
 .contact-link section {
-  padding: 2em;
-  margin: auto 0;
-  box-shadow: 2px 2px 2px 2px #D3D3D3;
+  display: inline-block;
+  padding-right: 1em;
   color: #006678;
 }
-
-
-@media screen and (min-width: 600px){
 
 .Contact,
 .Contact-secondary {
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 5px 15px;
   background-color: #006678;
   color: #f2f3f4;
   border: 1px solid #000000;
   border-radius: 20px;
-  display: inline-block;
 }
+
+.Contact {
+  margin-top: 5em;
+}
+
+.about-head {
+  padding: 5em;
+  padding-top: 7em;
+  background-color: #006678;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about {
+  margin-top: -5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-main {
+  background-color: #F2F3F4;
+}
+
+.about-tile {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+  width: 50%;
+  margin: 1em 1em;
+  background-color: #ffffff;
+}
+
+.about-tile h3 {
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+
+.process-head {
+  text-align: center;
+}
+
+.process {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.process-number {
+  display: flex;
+  margin: auto;
+}
+
+.proc
+
+@media screen and (min-width: 600px){
+
+  .Contact,
+  .Contact-secondary {
+    padding: 10px 25px;
+    background-color: #006678;
+    color: #f2f3f4;
+    border: 1px solid #000000;
+  }
+
+  .about-tile {
+    width: 15%;
+  }
+
+  .about-tile h3 {
+    padding-bottom: 1em;
+    font-size: 2em;
+  }
 
 }
 @media screen and (min-width: 1000px){
