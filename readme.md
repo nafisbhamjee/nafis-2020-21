@@ -1,3 +1,5 @@
+https://CTEC3905-2020-21.github.io/assignment-nafisbhamjee/index.html
+
 # CTEC3905 Assignment
 
 This repository contains basic boilerplate code for you to get started with.
